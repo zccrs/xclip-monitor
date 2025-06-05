@@ -1,6 +1,25 @@
 # X11剪切板监控工具
 
+**语言 / Language:** [中文](README.md) | [English](README_EN.md)
+
 这是一个用C语言编写的X11剪切板监控工具，能够实时监控剪切板的变化，并显示剪切板所有者的详细信息。
+
+## 🌐 多语言支持
+
+该工具现在支持中英文双语显示：
+- 🔍 **自动语言检测**: 根据系统环境变量(`LANG`, `LC_ALL`, `LC_MESSAGES`)自动选择显示语言
+- 🇨🇳 **中文支持**: `zh_CN`, `zh_TW`, `zh_HK`, `zh_SG`等中文locale
+- 🇺🇸 **英文支持**: 其他locale默认使用英文显示
+- 🛠️ **手动设置**: 可通过设置环境变量手动指定语言
+
+### 使用示例
+```bash
+# 使用中文显示
+LANG=zh_CN.UTF-8 ./xclip-monitor
+
+# 使用英文显示
+LANG=en_US.UTF-8 ./xclip-monitor
+```
 
 ## 功能特性
 
